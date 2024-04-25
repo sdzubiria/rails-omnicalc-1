@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Target: Omnicalc-1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <%= form_tag('/square_root/results', method: :post) do %>
+        <div>
+            <label for="user_number">Enter a number:</label>
+            <input id="user_number" type="text" name="users_number" placeholder="What number do you want to take the square root of?">
+        </div>
+        <button type="submit">Calculate square root</button>
+    <% end %>
+</body>
+</html>
